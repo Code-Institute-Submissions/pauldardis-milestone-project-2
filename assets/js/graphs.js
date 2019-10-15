@@ -9,7 +9,7 @@ function makeGraphs(error, electionData) {
     // these are the working graphs 
     region_selector(ndx);
     constituency_selector(ndx);
-    // party_first_preference_graphs(ndx);
+    party_first_preference_graphs(ndx);
     // candidate_graphs(ndx);
     // show_data_table(ndx);
     show_count_candidate_fg(ndx, "F", "#count-of-women-candidate-fg");
@@ -563,4 +563,37 @@ function show_count_elected_others(ndx, gender, element) {
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
         .group(countThatAreElected)
+}
+
+
+function party_first_preference_graphs(ndx) {
+
+    var dim = ndx.dimension(dc.pluck('Party_Abbreviation'));
+    var group = dim.group().reduceSum(dc.pluck('Count_1'));
+
+    dc.pieChart('#party_first_preference_graphs')
+        .height(400)
+        .width(400)
+        .innerRadius(95)
+        .transitionDuration(1500)
+        .colors(d3.scale.ordinal().range(["#8B8C8A", "#00A3DF", "#12A853", "#014B45", "#D6323D", "#91B905"]))
+        .dimension(dim)
+        .renderLabel(true)
+        .legend(dc.legend().x(150).y(130).itemHeight(14).gap(5))
+        .title(function(d) {
+            return d.key + ": " + ((d.value / d3.sum(group.all(),
+                function(d) { return d.value; })) * 100).toFixed(2) + "%";
+        })
+        .on("pretransition", function(chart) {
+            chart.selectAll("text.pie-slice").text(function(d) {
+                if (dc.utils.printSingleValue(
+                        (d.endAngle - d.startAngle) /
+                        (2 * Math.PI) * 100) >= 6) {
+                    return dc.utils.printSingleValue(
+                        (d.endAngle - d.startAngle) /
+                        (2 * Math.PI) * 100) + "%";
+                }
+            })
+        })
+        .group(group);
 }
