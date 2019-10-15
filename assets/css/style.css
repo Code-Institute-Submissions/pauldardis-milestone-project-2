@@ -15,9 +15,6 @@ body {
 }
 
 
-
-
-
 .section {
     border-bottom: 1px solid #e6e6e6;
     padding: 20px 0;
@@ -29,3 +26,96 @@ body {
 }
 
 
+/*Gender Information */
+
+.party_color_ff {
+    background-color: #12A853;
+
+}
+
+.party_color_lab {
+    background-color: #D6323D;
+
+}
+
+.party_color_sf {
+    background-color: #014B45;
+
+}
+
+.party_color_others {
+    background-color: #8B8C8A;
+
+}
+
+.party_color_gp {
+    background-color: #91B905;
+
+}
+
+.party_color_fg {
+    background-color: #00A3DF;
+
+}
+
+.gender_party_box {
+    /*height: 12rem;*/
+    /*width: 12rem;*/
+    border-radius: 20px;
+    margin: 10px;
+
+
+}
+
+
+
+.party-name {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.gender-text {
+    color: white;
+    text-align: center;
+}
+
+
+.fa-gender {
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    margin-left: 10px;
+}
+
+
+.gender_number {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+
+}
+
+.gender-row {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 25px;
+
+}
+
+.gender-icon {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.gender-num-div {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+}
