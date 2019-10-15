@@ -120,6 +120,19 @@ body {
     text-align: center;
 }
 
-.center-graphs {
+.center-graphs-firstPreferance {
     text-align: center;
+}
+
+.center-graphs-candidate {
+    text-align: center;
+}
+
+.custom-chart {
+    margin-bottom: 40px;
+
+}
+
+.dc-select-menu {
+    width: 250px;
 }
