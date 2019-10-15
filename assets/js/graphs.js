@@ -41,19 +41,19 @@ function makeGraphs(error, electionData) {
     dc.renderAll();
 }
 
-// queue()
-//     .defer(d3.csv, "assets/data/generalelection2016constituencydetails.csv")
-//     .await(makeTable);
+queue()
+    .defer(d3.csv, "assets/data/generalelection2016constituencydetails.csv")
+    .await(makeTable);
 
-// function makeTable(error, tableData) {
-//     var ndx = crossfilter(tableData);
+function makeTable(error, tableData) {
+    var ndx = crossfilter(tableData);
 
 
-//     // these are the working graphs 
-//     show_constituency_table(ndx)
+    // these are the working graphs 
+    show_constituency_table(ndx)
 
-//     dc.renderAll();
-// }
+    dc.renderAll();
+}
 
 
 function refreshPage() {
@@ -692,5 +692,32 @@ function show_data_table(ndx) {
         update_offset();
         table.redraw();
     });
+
+}
+
+function show_constituency_table(ndx) {
+    
+
+    var dim = ndx.dimension(function(d) { return d.dim; });
+
+    var table = dc.dataTable("#dc-constituency-table") /* variable created for pagination */
+   
+
+        .dimension(dim)
+        .group(function(d) { return ""; })
+        .size(Infinity) /* Adjust amount of rows here. Use 'Infinity' to show all data */
+
+        .columns([
+            function(d) { return d.Constituency_Name; },
+            function(d) { return d.Total_Electorate; },
+            function(d) { return ((((parseInt(d.Valid_Poll)) + (parseInt(d.Spoiled))) / (parseInt(d.Total_Electorate)) * 100).toFixed(0)) + "%" },
+            function(d) { return d.Valid_Poll; },
+            function(d) { return d.Spoiled; }
+
+
+        ]).sortBy(function(d) {
+            return d.Total_Electorate; /* sortBy return = d.Total_Electorate will sort data by Total_Electorate */
+        })
+        .order(d3.ascending)
 
 }
