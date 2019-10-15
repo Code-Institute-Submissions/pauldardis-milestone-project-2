@@ -1,6 +1,7 @@
 queue()
-    .defer(d3.csv, "assets/data/election-2016.csv")
+    .defer(d3.csv, "assets/data/election-2016-constituency.csv")
     .await(makeGraphs);
+    // console.log(makeGraphs)
 
 function makeGraphs(error, electionData) {
     var ndx = crossfilter(electionData);
@@ -42,8 +43,9 @@ function makeGraphs(error, electionData) {
 }
 
 queue()
-    .defer(d3.csv, "assets/data/generalelection2016constituencydetails.csv")
+    .defer(d3.csv, "assets/data/generalelection2016-constituency-details.csv")
     .await(makeTable);
+    
 
 function makeTable(error, tableData) {
     var ndx = crossfilter(tableData);
@@ -150,7 +152,7 @@ function show_count_elected_fg(ndx, gender, element) {
         },
     );
 
-    console.log(countThatAreElected);
+    // console.log(countThatAreElected);
     dc.numberDisplay(element)
         .valueAccessor(function(d) {
             if (d.count == 0) {
@@ -230,7 +232,7 @@ function show_count_elected_ff(ndx, gender, element) {
         },
     );
 
-    console.log(countThatAreElected);
+    // console.log(countThatAreElected);
     dc.numberDisplay(element)
         .valueAccessor(function(d) {
             if (d.count == 0) {
@@ -310,7 +312,7 @@ function show_count_elected_gp(ndx, gender, element) {
         },
     );
 
-    console.log(countThatAreElected);
+    // console.log(countThatAreElected);
     dc.numberDisplay(element)
         .valueAccessor(function(d) {
             if (d.count == 0) {
@@ -390,7 +392,7 @@ function show_count_elected_lab(ndx, gender, element) {
         },
     );
 
-    console.log(countThatAreElected);
+    // console.log(countThatAreElected);
     dc.numberDisplay(element)
         .valueAccessor(function(d) {
             if (d.count == 0) {
@@ -470,7 +472,7 @@ function show_count_elected_sf(ndx, gender, element) {
         },
     );
 
-    console.log(countThatAreElected);
+    // console.log(countThatAreElected);
     dc.numberDisplay(element)
         .valueAccessor(function(d) {
             if (d.count == 0) {
@@ -550,7 +552,7 @@ function show_count_elected_others(ndx, gender, element) {
         },
     );
 
-    console.log(countThatAreElected);
+    // console.log(countThatAreElected);
     dc.numberDisplay(element)
         .valueAccessor(function(d) {
             if (d.count == 0) {
