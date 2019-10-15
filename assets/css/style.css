@@ -199,3 +199,7 @@ body {
     /*border-bottom: 1px dotted black;*/
 }
 
+.footer-container {
+      text-align: center;
+      padding-top: 10px;
+}
