@@ -6,7 +6,7 @@ function makeGraphs(error, electionData) {
     var ndx = crossfilter(electionData);
 
 
-    // these are the working graphs 
+    
     region_selector(ndx);
     constituency_selector(ndx);
     party_first_preference_graphs(ndx);
