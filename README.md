@@ -153,27 +153,31 @@ Dún Laoghaire displayed as D�n Laoghaire
 
 ## Deployment
 ### Deployment
-To deploy this project to GitHub Pages from its https://github.com/pauldardis/milestone-project-2  , the following steps were taken:
+To deploy this project to GitHub Pages from its https://github.com/pauldardis/milestone-project-2, the following steps were taken:
 1.	Log into GitHub.
-2.	From the list of repositories on the screen, select https://github.com/pauldardis/milestone-project-2 
-3.	From the menu items near the top of the page, select Settings.
-4.	Scroll down to the GitHub Pages section.
-5.	Under Source click the drop-down menu labelled None and select Master Branch
+2.	From the list of repositories on the screen, select **pauldardis/milestone-project-2**
+3.	From the menu items near the top of the page, **select Settings**.
+4.	Scroll down to the **GitHub Pages** section.
+5.	Under Source click the drop-down menu labelled **None** and select **Master Branch**
 6.	On selecting Master Branch the page is automatically refreshed, the project is now deployed.
-7.	Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
+7.	Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
 
 ### How to run this project locally
 To clone this project from GitHub:
-* Follow this link to the https://github.com/pauldardis/milestone-project-2
-* Under the repository name, click "Clone or download".
-* In the Clone with HTTPs section, copy the clone URL for the repository.
-* In your local IDE open Git Bash.
-* Change the current working directory to the location where you want the cloned directory to be made.
-* Type git clone, and then paste the URL you copied in Step 3.
-git clone https://github.com/USERNAME/REPOSITORY
-* Press Enter. Your local clone will be created.
+1. Follow this link to the https://github.com/pauldardis/milestone-project-2
+2. Under the repository name, click "Clone or download".
+3. In the Clone with HTTPs section, copy the clone URL for the repository.
+4. In your local IDE open Git Bash.
+5.  Change the current working directory to the location where you want the cloned directory to be made.
+6.  Type git clone, and then paste the URL you copied in Step 3.
+  
 
-Further reading and troubleshooting on cloning a repository from GitHub here.
+
+    git clone https://github.com/USERNAME/REPOSITORY
+    
+7. Press Enter. Your local clone will be created.
+
+Further reading and troubleshooting on cloning a repository from GitHub https://help.github.com/en/articles/cloning-a-repository
 
 
 
