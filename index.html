@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/dc.min.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/d3.min.js"></script>
+    <script type="text/javascript" src="assets/js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="assets/js/dc.min.js"></script>
+    <script type="text/javascript" src="assets/js/queue.min.js"></script>
+    <script type="text/javascript" src="assets/js/graphs.js"></script>
+
+</head>
+
+<body>
+
+    <section>
+        <div class="container-fluid  bg-dark">
+            <div class="row">
+                <div class="title-container">
+                    <div col-1 class="title-container">
+                        <div>
+                            <h1 class="title-container">2016 Irish General Election Statistics</h1>
+                        </div>
+                        <div id="refresh-button">
+                            <button type="submit" class="btn btn-success" onClick="refreshPage()">Refresh Charts</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container-fluid">
+            <div class="selection-container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center custom-chart" id="region-selector">
+                        <h2 class="selection-text">Select Region</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center custom-chart" id="constituency-selector">
+                        <h2 class="selection-text">Select Constituency</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container-fluid  bg-dark ">
+            <div class="row">
+                <div class="title-container">
+                    <div>
+                        <h1 class="title-container"> I need links in here </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
