@@ -718,9 +718,9 @@ function show_constituency_table(ndx) {
 
 
         ]).sortBy(function(d) {
-            return d.Total_Electorate; /* sortBy return = d.Total_Electorate will sort data by Total_Electorate */
+            return (parseInt(d.Total_Electorate)); /* sortBy return = d.Total_Electorate will sort data by Total_Electorate */
         })
-        .order(d3.ascending)
+        .order(d3.descending)
 
 }
 
