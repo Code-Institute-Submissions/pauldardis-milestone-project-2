@@ -1,13 +1,14 @@
 queue()
     .defer(d3.csv, "assets/data/election-2016-constituency.csv")
     .await(makeGraphs);
-    // console.log(makeGraphs)
+    
+// console.log(makeGraphs)
 
 function makeGraphs(error, electionData) {
     var ndx = crossfilter(electionData);
 
 
-    
+
     region_selector(ndx);
     constituency_selector(ndx);
     party_first_preference_graphs(ndx);
@@ -45,7 +46,7 @@ function makeGraphs(error, electionData) {
 queue()
     .defer(d3.csv, "assets/data/generalelection2016-constituency-details.csv")
     .await(makeTable);
-    
+
 
 function makeTable(error, tableData) {
     var ndx = crossfilter(tableData);
@@ -631,7 +632,6 @@ function show_data_table(ndx) {
             function(d) { return d.Candidate; },
             function(d) { return d.Gender; },
             function(d) { return d.Party; },
-            // function(d) { return d.Party_Abbreviation; },
             function(d) { return d.Result; },
             function(d) { return d.Count_1; },
             function(d) { return d.Total_Votes; }
@@ -723,3 +723,9 @@ function show_constituency_table(ndx) {
         .order(d3.ascending)
 
 }
+
+
+// TESTING SORTING TABLE 
+
+ 
+ 
