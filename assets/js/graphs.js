@@ -617,6 +617,7 @@ function candidate_graphs(ndx) {
         .group(group);
 }
 
+
 function show_data_table(ndx) {
 
     var dim = ndx.dimension(function(d) { return d.dim; });
