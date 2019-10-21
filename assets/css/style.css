@@ -64,8 +64,8 @@ body {
 }
 
 .gender_party_box {
-    height: 12rem;
-    width: 12rem;
+    height: 200px;
+    width: 200px;
     border-radius: 20px;
     margin: 10px;
 
@@ -125,6 +125,16 @@ body {
     text-align: center;
 }
 
+.pie-container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.rowChart-container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .center-graphs-firstPreferance {
     text-align: center;
 }
@@ -165,7 +175,7 @@ body {
     opacity: 0;
     transition: opacity 0.3s;
     font-size: 12px;
-     font-weight: normal;
+    font-weight: normal;
 }
 
 .tooltip .tooltiptext::after {
@@ -186,10 +196,10 @@ body {
 
 .fa-info-circle {
     color: #FFBD33;
-      font-size: 15px;
-      font-weight: normal;
-  
-   
+    font-size: 15px;
+    font-weight: normal;
+
+
 }
 
 .tooltip {
@@ -200,8 +210,8 @@ body {
 }
 
 .footer-container {
-      text-align: center;
-      padding-top: 10px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 
@@ -211,25 +221,28 @@ body {
 
 
 /*Sorting table */
-  #paging {
+
+#paging {
     text-align: right;
-  }
-  #dc-table-graph th span { /*Glyphicon style*/
+}
+
+#dc-table-graph th span {
+    /*Glyphicon style*/
     float: right;
     font-size: 1em;
     color: #0080bf;
     display: inline-block;
-  }
-  #dc-table-graph th {
+}
+
+#dc-table-graph th {
     cursor: pointer;
-  }
-  
-  
-  .candidate-scrollable {
-  overflow-x: scroll;
 }
 
-  .constituency-scrollable{
-  overflow-x: scroll;
+
+.candidate-scrollable {
+    overflow-x: scroll;
 }
 
+.constituency-scrollable {
+    overflow-x: scroll;
+}

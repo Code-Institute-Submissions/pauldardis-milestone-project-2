@@ -606,7 +606,7 @@ function candidate_graphs(ndx) {
     var group = dim.group().reduceSum(dc.pluck('Seat'));
 
     dc.rowChart("#candidate-graph")
-        .width(500)
+        .width(450)
         .height(400)
         .colors(d3.scale.ordinal().range(["#91B905", "#D6323D", "#014B45", "#8B8C8A", "#12A853", "#00A3DF"]))
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
