@@ -41,6 +41,13 @@ This dashboard website has been built to show the breakdown of seats by party an
 | 5  |Public     |I want to view the percentage of total turnout by constituency.|
 | 6  |Public     |I want to be able to view the amount of spoilt votes by constituency.|
 
+#### Wireframes
+Wireframes sketches were created to design the dashboard layout options.
+1.  [Mobile display] (assets/wireframes/desktop.pdf)
+2.  Medium display
+3.  Desktop display 
+
+
 #### Features
 ##### Dropdown Filter Box
 
@@ -152,6 +159,10 @@ code was tested using https://jigsaw.w3.org/css-validator/
 CSV file had Irish names some of which contained a “fatha” this resulted in the name being displayed incorrectly in the graph and table. 
 Example 
 Dún Laoghaire displayed as D�n Laoghaire 
+
+Unfortunately I have been unable to find a solution to this issue. I CSV file is utf-8 format, I have set utf-8 in the html header, also the java scripts contain charset="utf-8".  I have raised the issue on a few forums and they all say that configuring charset="utf-8" into the java script should resolve the issue however i just can’t seem to get it to work. I have also asked our code institute tutor and they also are unable to fix the issue.  
+
+
 
 
 
