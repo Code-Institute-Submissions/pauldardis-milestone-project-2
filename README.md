@@ -43,8 +43,8 @@ This dashboard website has been built to show the breakdown of seats by party an
 
 #### Wireframes
 Wireframes sketches were created to design the dashboard layout options.
-1.  [Mobile display] (assets/wireframes/desktop.pdf)
-2.  Medium display
+1.  [Mobile display](assets/wireframes/mobile.pdf)
+2.  [Medium display](assets/wireframes/medium.pdf)
 3.  [Desktop display](assets/wireframes/desktop.pdf)
 
 #### Features
@@ -116,7 +116,7 @@ This provides summary data on each constituency.
 * Valid Votes	
 * Spoiled Votes
 
-User can click on the headings to sort the data 
+ 
 
 ##### Refresh Button:
 This removes all filters and refreshes the graphs and tables back to normal.
