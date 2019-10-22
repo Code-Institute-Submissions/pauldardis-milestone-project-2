@@ -5,6 +5,10 @@
 ### Demo
 A live demo can be found here https://pauldardis.github.io/milestone-project-2/
 
+ 
+![test](assets/images/mockup.png)
+
+
 ### Purpose
 
 The 2016 Irish general election took place on Friday 26 February to elect 157 Teachtaí Dála (TDs) across 40 constituencies to Dáil Éireann 
