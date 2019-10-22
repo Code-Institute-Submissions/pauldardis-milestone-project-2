@@ -575,8 +575,8 @@ function party_first_preference_graphs(ndx) {
     var group = dim.group().reduceSum(dc.pluck('Count_1'));
 
     dc.pieChart('#party_first_preference_graphs')
-        .height(400)
-        .width(400)
+        .height(360)
+        .width(360)
         .innerRadius(95)
         .transitionDuration(1500)
         .colors(d3.scale.ordinal().range(["#8B8C8A", "#00A3DF", "#12A853", "#014B45", "#D6323D", "#91B905"]))
@@ -606,8 +606,8 @@ function candidate_graphs(ndx) {
     var group = dim.group().reduceSum(dc.pluck('Seat'));
 
     dc.rowChart("#candidate-graph")
-        .width(450)
-        .height(400)
+        .width(360)
+        .height(360)
         .colors(d3.scale.ordinal().range(["#91B905", "#D6323D", "#014B45", "#8B8C8A", "#12A853", "#00A3DF"]))
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
         .dimension(dim)
