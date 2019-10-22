@@ -6,7 +6,7 @@
 A live demo can be found here https://pauldardis.github.io/milestone-project-2/
 
  
-![test](assets/images/mockup.png)
+![mockup image](assets/images/mockup.png)
 
 
 ### Purpose
