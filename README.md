@@ -45,8 +45,7 @@ This dashboard website has been built to show the breakdown of seats by party an
 Wireframes sketches were created to design the dashboard layout options.
 1.  [Mobile display] (assets/wireframes/desktop.pdf)
 2.  Medium display
-3.  Desktop display 
-
+3.  [Desktop display](assets/wireframes/desktop.pdf)
 
 #### Features
 ##### Dropdown Filter Box
