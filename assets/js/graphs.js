@@ -53,7 +53,7 @@ function makeTable(error, tableData) {
 
 
     // these are the working graphs 
-    show_constituency_table(ndx)
+    show_constituency_table(ndx);
 
     dc.renderAll();
 }
@@ -124,7 +124,7 @@ function show_count_candidate_fg(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatArecandidate)
+        .group(countThatArecandidate);
 }
 
 function show_count_elected_fg(ndx, gender, element) {
@@ -165,7 +165,7 @@ function show_count_elected_fg(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatAreElected)
+        .group(countThatAreElected);
 }
 
 function show_count_candidate_ff(ndx, gender, element) {
@@ -204,7 +204,7 @@ function show_count_candidate_ff(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatArecandidate)
+        .group(countThatArecandidate);
 }
 
 function show_count_elected_ff(ndx, gender, element) {
@@ -245,7 +245,7 @@ function show_count_elected_ff(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatAreElected)
+        .group(countThatAreElected);
 }
 
 function show_count_candidate_gp(ndx, gender, element) {
@@ -284,7 +284,7 @@ function show_count_candidate_gp(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatArecandidate)
+        .group(countThatArecandidate);
 }
 
 function show_count_elected_gp(ndx, gender, element) {
@@ -325,7 +325,7 @@ function show_count_elected_gp(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatAreElected)
+        .group(countThatAreElected);
 }
 
 function show_count_candidate_lab(ndx, gender, element) {
@@ -364,7 +364,7 @@ function show_count_candidate_lab(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatArecandidate)
+        .group(countThatArecandidate);
 }
 
 function show_count_elected_lab(ndx, gender, element) {
@@ -405,7 +405,7 @@ function show_count_elected_lab(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatAreElected)
+        .group(countThatAreElected);
 }
 
 function show_count_candidate_sf(ndx, gender, element) {
@@ -444,7 +444,7 @@ function show_count_candidate_sf(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatArecandidate)
+        .group(countThatArecandidate);
 }
 
 function show_count_elected_sf(ndx, gender, element) {
@@ -485,7 +485,7 @@ function show_count_elected_sf(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatAreElected)
+        .group(countThatAreElected);
 }
 
 function show_count_candidate_others(ndx, gender, element) {
@@ -524,7 +524,7 @@ function show_count_candidate_others(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatArecandidate)
+        .group(countThatArecandidate);
 }
 
 function show_count_elected_others(ndx, gender, element) {
@@ -565,7 +565,7 @@ function show_count_elected_others(ndx, gender, element) {
         })
         // .transitionDuration(1500)
         .formatNumber(d3.format("1.s"))
-        .group(countThatAreElected)
+        .group(countThatAreElected);
 }
 
 
@@ -596,7 +596,7 @@ function party_first_preference_graphs(ndx) {
                         (d.endAngle - d.startAngle) /
                         (2 * Math.PI) * 100) + "%";
                 }
-            })
+            });
         })
         .group(group);
 }
@@ -721,12 +721,12 @@ function show_constituency_table(ndx) {
         ]).sortBy(function(d) {
             return (parseInt(d.Total_Electorate)); /* sortBy return = d.Total_Electorate will sort data by Total_Electorate */
         })
-        .order(d3.descending)
+        .order(d3.descending);
 
 }
 
 
-// TESTING SORTING TABLE 
+
 
  
  

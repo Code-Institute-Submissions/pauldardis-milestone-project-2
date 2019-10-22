@@ -140,26 +140,47 @@ This removes all filters and refreshes the graphs and tables back to normal.
 
 ### Testing 
 #### HTML 
-code was tested using https://validator.w3.org/ 
-##### Results 
-******************** need to put somthing in here ********************
+The HTML code was tested using https://validator.w3.org/ 
+
+All errors and warnings were address and document without any errors or warnings.
+
 
 ### CSS 
-code was tested using https://jigsaw.w3.org/css-validator/
-#### Results 
-******************** need to put somthing in here ********************
+The CSS code was tested using https://jigsaw.w3.org/css-validator/
+
+All errors and warnings were address and document without any errors or warnings.
+
+### JavaScript
+The JavaScript code was validated using https://jshint.com/
+
+All errors were address
 
 ### Charts
-******************** need to put somthing in here ********************
+# ******************** need to put somthing in here ********************
 
 
-#### Issues found: 
+#### Bugs: 
 
-CSV file had Irish names some of which contained a “fatha” this resulted in the name being displayed incorrectly in the graph and table. 
-Example 
-Dún Laoghaire displayed as D�n Laoghaire 
+The CSV file contains Irish names some of which include a “fatha” this resulted in the name being displayed incorrectly in the graph and table. 
 
-Unfortunately I have been unable to find a solution to this issue. I CSV file is utf-8 format, I have set utf-8 in the html header, also the java scripts contain charset="utf-8".  I have raised the issue on a few forums and they all say that configuring charset="utf-8" into the java script should resolve the issue however i just can’t seem to get it to work. I have also asked our code institute tutor and they also are unable to fix the issue.  
+
+Example:     Dún Laoghaire displayed as D�n Laoghaire 
+
+The CSV file format is utf-8 also the html file is set to utf-8.
+I have searched on several forums and all solutions failed to resolve the issue, I also sought help from Code Institute tutor and they are also unable to resolve the issue. 
+
+### Responsiveness testing
+This site was tested across multiple browsers (Chrome, Safari, and Internet Explorer) and on multiple mobile devices (iPad, Samsung S11 & S7) to ensure compatibility and responsiveness.
+Chrome developer tools were used to additionally inspect responsiveness for the following devices:
+1.  iPad Pro / iPad / iPad Mini (portrait & landscape);
+2.  iPhone 5/SE (portrait & landscape);
+3.  iPhone 6/7/8 (portrait & landscape);
+4.  iPhone 6/7/8 Plus (portrait & landscape);
+5.  iPhone X (portrait & landscape);
+6.  Android (Pixel 2) (portrait & landscape)
+
+
+https://responsivedesignchecker.com/  was also used to test responsiveness of the project.
 
 
 
@@ -197,11 +218,13 @@ Further reading and troubleshooting on cloning a repository from GitHub https://
 
 ## Credits
 ### Data Source
-?????????
+The election datasets were downloaded from DATA.GOV.IE  
+
 ### Code Snippets
-??????? 
+The step by step guide was downloaded from https://introjs.com/
+
 ### Help
-???
+
 
 ## Disclaimer:
 This project was created for educational use.
