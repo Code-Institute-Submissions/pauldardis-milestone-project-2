@@ -121,6 +121,9 @@ This provides summary data on each constituency.
 ##### Refresh Button:
 This removes all filters and refreshes the graphs and tables back to normal.
 
+##### Help Guide
+An interactive help guide that explains to the user what each chart is representing and also explain how they can filter on either a region or constituency. 
+
 
 ## Technologies used
 ### Programming languages
