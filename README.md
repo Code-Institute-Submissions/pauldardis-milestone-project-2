@@ -159,7 +159,7 @@ The JavaScript code was validated using https://jshint.com/
 All errors were address
 
 ### Charts
-# ******************** need to put somthing in here ********************
+The Bar and Pie charts were tested to ensure that they were formatted correctly, presented the correct colours for each party, and there was also random checks to make sure that the data was correct. 
 
 
 #### Bugs: 
@@ -169,8 +169,7 @@ The CSV file contains Irish names some of which include a “fatha” this resul
 
 Example:     Dún Laoghaire displayed as D�n Laoghaire 
 
-The CSV file format is utf-8 also the html file is set to utf-8.
-I have searched on several forums and all solutions failed to resolve the issue, I also sought help from Code Institute tutor and they are also unable to resolve the issue. 
+After a lot of testing I found that the issue was being caused by AWS Cloud 9. When the file is loaded the format was being changed. To fix this I had to open a blank file on AWS paste the contents into the file and then save it as a CSV file. 
 
 ### Responsiveness testing
 This site was tested across multiple browsers (Chrome, Safari, and Internet Explorer) and on multiple mobile devices (iPad, Samsung S11 & S7) to ensure compatibility and responsiveness.
