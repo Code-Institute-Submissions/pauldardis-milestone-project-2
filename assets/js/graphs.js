@@ -1,12 +1,14 @@
+
+
+// D3 code for main graphs and tables
 queue()
     .defer(d3.csv, "assets/data/election-2016-constituency.csv")
     .await(makeGraphs);
     
-// console.log(makeGraphs)
+
 
 function makeGraphs(error, electionData) {
     var ndx = crossfilter(electionData);
-
 
 
     region_selector(ndx);
@@ -43,6 +45,7 @@ function makeGraphs(error, electionData) {
     dc.renderAll();
 }
 
+// DC code for Constituency Table
 queue()
     .defer(d3.csv, "assets/data/generalelection2016-constituency-details.csv")
     .await(makeTable);
