@@ -163,25 +163,13 @@ body {
 
 
 
-
-
 #paging {
     text-align: right;
 }
 
-#dc-table-graph th span {
-    /*Glyphicon style*/
-    float: right;
-    font-size: 1em;
-    color: #0080bf;
-    display: inline-block;
-}
-
-#dc-table-graph th {
-    cursor: pointer;
-}
 
 .footer-container {
     text-align: center;
     padding-top: 10px;
 }
+

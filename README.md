@@ -225,8 +225,6 @@ The election datasets were downloaded from DATA.GOV.IE
 ### Code Snippets
 The step by step guide was downloaded from https://introjs.com/
 
-### Help
-
 
 ## Disclaimer:
 This project was created for educational use.
