@@ -180,6 +180,17 @@ body {
     cursor: pointer;
 }
 
+.candidate-scrollable {
+    overflow-x: scroll;
+}
+
+.constituency-scrollable {
+    overflow-x: scroll;
+}
+
+
+
+
 .footer-container {
     text-align: center;
     padding-top: 10px;
